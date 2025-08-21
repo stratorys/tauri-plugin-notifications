@@ -1,19 +1,34 @@
 {
-  "name": "@inkibra/tauri-plugin-notifications",
-  "version": "0.1.4",
+  "name": "@stratorys/tauri-plugin-push-notification",
+  "version": "0.2.0",
   "author": "You",
   "description": "",
   "license": "MIT",
   "type": "module",
-  "main": "./build/index.js",
-  "types": "./index.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
-    "build": "npx tsc",
-    "clean": "rm -rf build",
-    "prepublishOnly": "npm run clean && npx tsc"
+    "build": "tsc --noEmitOnError",
+    "lint": "tsc --noEmit --strict",
+    "clean": "rm -rf dist",
+    "prepare": "npm run build"
   },
   "dependencies": {
-    "@tauri-apps/api": "^2.5.0"
+    "@tauri-apps/api": "^2.5.0",
+    "@tauri-apps/plugin-notification": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
@@ -21,6 +36,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/inkibra/tauri-plugins.git"
+    "url": "https://github.com/stratorys/tauri-plugins.git"
   }
 }

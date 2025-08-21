@@ -1,15 +1,16 @@
 [package]
-name = "tauri-plugin-notifications"
-version = "0.1.0"
-authors = [ "You" ]
+name = "tauri-plugin-push-notification"
+version = "0.2.0"
+authors = ["You"]
 description = ""
 edition = "2021"
 rust-version = "1.71"
 exclude = ["/examples", "/webview-dist", "/webview-src", "/node_modules"]
-links = "tauri-plugin-notifications"
+links = "tauri-plugin-push-notification"
 
 [dependencies]
 tauri = { version = "2" }
+tauri-plugin-notification = "2.0.0"
 serde = "1.0"
 thiserror = "1.0"
 

@@ -1,31 +1,22 @@
 {
   "compilerOptions": {
-    "pretty": true,
-    "module": "commonjs",
     "target": "ES2022",
-    "resolveJsonModule": true,
-    "types": [],
-    // "sourceMap": true,
-    "incremental": true,
-    "inlineSourceMap": true,
-    "inlineSources": true,
-    "allowSyntheticDefaultImports": true,
-    // inline
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "declaration": true,
     "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "exactOptionalPropertyTypes": true,
     "noImplicitReturns": true,
-    // "noStrictGenericChecks": false, TODO: evaluate
-    "esModuleInterop": true,
-    "plugins": [
-      {
-        "transform": "typia/lib/transform"
-      }
-    ],
-    "strictNullChecks": true,
-    "skipLibCheck": true,
-    "outDir": "./build"
-  }
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false
+  },
+  "include": ["index.ts"]
 }

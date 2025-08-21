@@ -2,19 +2,8 @@ use tauri::{ipc::Channel, AppHandle, command, Runtime};
 
 use crate::{models::*, Result, NotificationsExt};
 
-#[command]
-pub(crate) async fn check_permissions<R: Runtime>(
-    app_handle: AppHandle<R>,
-) -> Result<NotificationPermissionStatus> {
-    app_handle.notifications().check_permissions()
-}
-
-#[command]
-pub(crate) async fn request_permissions<R: Runtime>(
-    app_handle: AppHandle<R>,
-) -> Result<NotificationPermissionStatus> {
-    app_handle.notifications().request_permissions()
-}
+// Push notification specific commands only
+// Basic notification permissions are handled by the official tauri-plugin-notification
 
 #[command]
 pub(crate) async fn check_registration_status<R: Runtime>(

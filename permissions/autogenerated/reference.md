@@ -22,7 +22,7 @@ Default permissions for the notifications plugin
 <tr>
 <td>
 
-`notifications:allow-check-permissions`
+`push-notification:allow-check-permissions`
 
 </td>
 <td>
@@ -35,7 +35,7 @@ Enables the check_permissions command without any pre-configured scope.
 <tr>
 <td>
 
-`notifications:deny-check-permissions`
+`push-notification:deny-check-permissions`
 
 </td>
 <td>
@@ -48,7 +48,7 @@ Denies the check_permissions command without any pre-configured scope.
 <tr>
 <td>
 
-`notifications:allow-check-registration-status`
+`push-notification:allow-check-registration-status`
 
 </td>
 <td>
@@ -61,7 +61,7 @@ Enables the check_registration_status command without any pre-configured scope.
 <tr>
 <td>
 
-`notifications:deny-check-registration-status`
+`push-notification:deny-check-registration-status`
 
 </td>
 <td>
@@ -74,7 +74,7 @@ Denies the check_registration_status command without any pre-configured scope.
 <tr>
 <td>
 
-`notifications:allow-register-for-remote-notifications`
+`push-notification:allow-register-for-remote-notifications`
 
 </td>
 <td>
@@ -87,7 +87,7 @@ Enables the register_for_remote_notifications command without any pre-configured
 <tr>
 <td>
 
-`notifications:deny-register-for-remote-notifications`
+`push-notification:deny-register-for-remote-notifications`
 
 </td>
 <td>
@@ -100,7 +100,7 @@ Denies the register_for_remote_notifications command without any pre-configured 
 <tr>
 <td>
 
-`notifications:allow-request-permissions`
+`push-notification:allow-request-permissions`
 
 </td>
 <td>
@@ -113,7 +113,7 @@ Enables the request_permissions command without any pre-configured scope.
 <tr>
 <td>
 
-`notifications:deny-request-permissions`
+`push-notification:deny-request-permissions`
 
 </td>
 <td>
@@ -126,7 +126,7 @@ Denies the request_permissions command without any pre-configured scope.
 <tr>
 <td>
 
-`notifications:allow-watch-notifications`
+`push-notification:allow-watch-notifications`
 
 </td>
 <td>
@@ -139,7 +139,7 @@ Enables the watch_notifications command without any pre-configured scope.
 <tr>
 <td>
 
-`notifications:deny-watch-notifications`
+`push-notification:deny-watch-notifications`
 
 </td>
 <td>

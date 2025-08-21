@@ -1,12 +1,10 @@
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 
-#[derive(Debug, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct NotificationPermissionStatus {
-    pub status: String, // "prompt" | "denied" | "granted"
-}
+// Re-export types from the official notification plugin
+pub use tauri_plugin_notification::PermissionState;
 
+// Push notification specific types
 #[derive(Debug, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct NotificationRegistrationStatus {
@@ -34,6 +32,7 @@ pub enum NotificationEventType {
 #[derive(Debug, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct NotificationEvent {
+    #[serde(rename = "type")]
     pub type_: NotificationEventType,
     pub payload: HashMap<String, String>,
 }
