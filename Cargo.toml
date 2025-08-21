@@ -1,14 +1,17 @@
-[workspace]
-resolver = "2"
-members = [
-    "packages/example-app/src-tauri",
-    "packages/tauri-plugin-sharing",
-    "packages/tauri-plugin-context-menu",
-    "packages/tauri-plugin-map-display",
-    "packages/tauri-plugin-haptic-feedback",
-    "packages/tauri-plugin-geolocation",
-    "packages/tauri-plugin-iap",
-    "packages/tauri-plugin-auth",
-    "packages/tauri-plugin-notifications",
-    "packages/tauri-plugin-ota"
-]
+[package]
+name = "tauri-plugin-notifications"
+version = "0.1.0"
+authors = [ "You" ]
+description = ""
+edition = "2021"
+rust-version = "1.71"
+exclude = ["/examples", "/webview-dist", "/webview-src", "/node_modules"]
+links = "tauri-plugin-notifications"
+
+[dependencies]
+tauri = { version = "2" }
+serde = "1.0"
+thiserror = "1.0"
+
+[build-dependencies]
+tauri-plugin = { version = "2", features = ["build"] }

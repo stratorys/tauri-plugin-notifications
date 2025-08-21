@@ -26,5 +26,6 @@
     ],
     "strictNullChecks": true,
     "skipLibCheck": true,
-  },
+    "outDir": "./build"
+  }
 }
